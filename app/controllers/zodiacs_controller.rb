@@ -3,7 +3,8 @@ class ZodiacsController < ApplicationController
   def sign
     # params = {"the_sign"=>"capricorn"}
 
-    @zodiac = params["the_sign"]
+    @zodiac = Zodiac.find_by({ :sign => params["the_sign"] })
+
   end
 
   def ram
