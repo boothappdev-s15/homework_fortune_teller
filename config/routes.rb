@@ -11,12 +11,12 @@ Rails.application.routes.draw do
 
   get("/zodiacs/aries",       { :controller =>  "zodiacs",  :action =>  "ram" })
   get("/zodiacs/taurus",      { :controller =>  "zodiacs", :action =>   "bull" })
-  get("/zodiacs/gemini",        { :controller => "zodiacs", :action => "twins" })
-  get("/zodiacs/cancer",       { :controller => "zodiacs",  :action => "crab" })
-  get("/zodiacs/leo",           { :controller => "zodiacs", :action => "lion" })
-  get("/zodiacs/virgo",      { :controller => "zodiacs", :action => "maiden" })
+  get("/zodiacs/gemini",      { :controller => "zodiacs", :action => "twins" })
+  get("/zodiacs/cancer",      { :controller => "zodiacs",  :action => "crab" })
+  get("/zodiacs/leo",         { :controller => "zodiacs", :action => "lion" })
+  get("/zodiacs/virgo",       { :controller => "zodiacs", :action => "maiden" })
   get("/zodiacs/libra",       { :controller => "zodiacs", :action => "scales" })
-  get("/zodiacs/scorpio",      { :controller => "zodiacs", :action => "scorpion" })
+  get("/zodiacs/scorpio",     { :controller => "zodiacs", :action => "scorpion" })
   get("/zodiacs/sagittarius", { :controller => "zodiacs", :action => "archer" })
   get("/zodiacs/capricorn",   { :controller => "zodiacs", :action => "goat" })
   get("/zodiacs/aquarius",    { :controller => "zodiacs", :action => "waterbearer" })
@@ -26,6 +26,6 @@ Rails.application.routes.draw do
   # PART 2: VARIABLE ROUTES
   # =======================
 
-  # get("/signs/:the_sign",         { :controller => "zodiacs", :action => "sign" })
-  # get("/creatures/:the_creature", { :controller => "zodiacs", :action => "creature" })
+  get("/signs/:the_sign",         { :controller => "zodiacs", :action => "sign" })
+  get("/creatures/:the_creature", { :controller => "zodiacs", :action => "creature" })
 end
