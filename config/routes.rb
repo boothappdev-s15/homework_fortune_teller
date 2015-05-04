@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   # Uncomment each route below ONE AT A TIME and debug.
 
   get("/zodiacs/aries",       { :controller => "zodiacs", :action => "ram" })
-  get("/zodiacs/taurus",      { :controller => "zodiacs", :action =>  "bull" })
+  get("/zodiacs/taurus",      { :controller => "zodiacs", :action => "bull" })
   get("/zodiacs/gemini",      { :controller => "zodiacs", :action => "twins" })
   get("/zodiacs/cancer",      { :controller => "zodiacs", :action => "crab" })
   get("/zodiacs/leo",         { :controller => "zodiacs", :action => "lion" })
@@ -26,6 +26,6 @@ Rails.application.routes.draw do
   # PART 2: VARIABLE ROUTES
   # =======================
 
-  # get("/signs/:the_sign",         { :controller => "zodiacs", :action => "sign" })
+  get("/signs/:the_sign",      { :controller => "zodiacs", :action => "sign" })
   # get("/creatures/:the_creature", { :controller => "zodiacs", :action => "creature" })
 end
