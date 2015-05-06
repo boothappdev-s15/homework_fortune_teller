@@ -1,4 +1,21 @@
 class ZodiacsController < ApplicationController
+  def sign
+    
+    @the_sign = params['the_sign']
+
+    @prediction = Zodiac.find_by({ :sign => @the_sign }).fortune
+
+    render 'sign'
+  end
+
+  def creature
+    @the_creature = params['the_creature']
+    @z = Zodiac.find_by({ :creature => @the_creature })
+
+    render 'creature'
+  end
+
+
   def ram
     @prediction = "As your professional dreams unfold, Aries, you may worry about the downside. First, there are new responsibilities that you might doubt your ability to fulfill. Second, you might be catapulted into an uncomfortable new realm of office politics. Don't let these matters put a damper on your enthusiasm. You have what it takes to fulfill the first concern and the wisdom to avoid the second. Onward and upward."
 
