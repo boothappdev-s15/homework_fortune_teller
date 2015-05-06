@@ -83,4 +83,16 @@ class ZodiacsController < ApplicationController
 
   end
 
+def creature
+
+    @creature = params["the_creature"].to_str
+
+    full_sign_entry = Zodiac.find_by({:creature => @creature })
+    @prediction = full_sign_entry.fortune
+    @sign = full_sign_entry.sign
+
+    render 'creature'
+
+  end
+
 end
