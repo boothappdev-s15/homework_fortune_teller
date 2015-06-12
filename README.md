@@ -40,7 +40,7 @@ So far so good, but what we really need is the fortune to be dynamically printed
 
 I've already prepared the info for you. In this Rails app, you have access to a class called `Zodiac` that I have created (**don't worry about how it works for now - assume it is pulling data from an API or a CSV**).
 
-**Available methods:** 
+**Available methods:**
 
 
 You can look up single zodiac, given a search criterion, using the `.find_by` method:
