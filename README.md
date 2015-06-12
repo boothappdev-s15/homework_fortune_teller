@@ -121,3 +121,5 @@ In other words, these URLs will all work and display both the sign and fortune w
 
 using a second flexible, smart RCAV.
 
+Your goal is to make your app work like [this target](https://fortune-teller-target.herokuapp.com).
+
