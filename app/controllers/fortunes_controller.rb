@@ -11,3 +11,5 @@ class FortunesController < ApplicationController
     @numbers = [rand(100...1000), rand(100...1000), rand(100...1000), rand(100...1000), rand(100...1000)]
   end
 end
+
+#
